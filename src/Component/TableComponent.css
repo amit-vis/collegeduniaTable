@@ -1,0 +1,106 @@
+.main-container{
+    text-align: justify;
+}
+.item-id{
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.college-details{
+    margin-left: 2%;
+    text-align: justify;
+}
+.college-details .college-name{
+    text-decoration: none;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+.college-details .college-name:hover{
+    text-decoration: underline;
+    text-decoration-color: #8c806e;
+}
+.course-fees a{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: green;
+    font-weight: 550;
+    margin-left: 5%;
+}
+
+.course-fees a:hover{
+    text-decoration: underline;
+    text-decoration-color: #8c806e;
+}
+.package-number{
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: green;
+    font-weight: 550;
+    margin-left: 5%;
+}
+.package-text{
+    text-decoration: none;
+    color: black;
+    margin-left: 5%;
+}
+
+.package:hover .package-number {
+    text-decoration: underline;
+    text-decoration-color: #8c806e;
+}
+
+.package:hover .package-text {
+    text-decoration: underline;
+}
+
+.review-container{
+    display: flex;
+    margin-left: 2%;
+}
+.review-container .dot{
+    width: 10px;
+    height: 10px;
+    background-color: #ffa100;
+    border-radius: 50%;
+    margin-top: 5%;
+}
+.review-container .review-data-text{
+    margin-left: 5%;
+    display: block;
+    font-size: 1.3rem;
+}
+.collegedunia-rating{
+    margin-left: 5%;
+    font-size: 1.3rem;
+}
+.filter-container{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+.filter-container .filter-section{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 1.2rem;
+    color: #8c806e;
+    font-weight: 400;
+}
+.filter-list{
+    width: 20%;
+}
+.filter-input{
+    margin-left: 2%;
+}
+.featured{
+    margin-top: -1%;
+    margin-left: 20%;
+    width: 10%;
+    background-color: red;
+    text-align: center;
+    z-index: 1000;
+    color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
