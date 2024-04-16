@@ -5,7 +5,7 @@ This project is a dynamic table that displays college data. It includes features
 
 ## Live Link
 
-link:- https://collegedunia-table.vercel.app/
+link:- https://collegedunia-table-i5x05h8bn-amitvis-projects.vercel.app/
 
 ### Sorting
 
