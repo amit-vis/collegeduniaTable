@@ -21,7 +21,7 @@ export const TableProvider = ({children})=>{
 
     const fetchedData = ()=>{
         let extendData = [];
-        for(let i=0; i<1; i++){
+        for(let i=0; i<5; i++){
             extendData = extendData.concat([...collegeData])
         }
         setFilterText(extendData)

@@ -6,12 +6,12 @@ import InfiniteScroll from "react-infinite-scroll-component";
 import { FilterSection } from "./Filter";
 
 export const TableSection = () => {
-    const { filterText, fetchedData, hasMore } = useTable();
+    const {filterText, fetchedData, hasMore} = useTable();
     return (
         <>
-            <NavbarSection />
+        <NavbarSection/>
             <div className="main-container">
-                <FilterSection />
+                <FilterSection/>
                 <Table responsive="lg" striped bordered hover>
                     <thead>
                         <tr>
@@ -24,11 +24,10 @@ export const TableSection = () => {
                         </tr>
                     </thead>
                     <InfiniteScroll
-                        dataLength={filterText.length}
-                        next={fetchedData}
-                        hasMore={hasMore}
-                        loader={<h4>Loading...</h4>}
-                        scrollableTarget="scrollableDiv"
+                    dataLength={filterText.length}
+                    next={fetchedData}
+                    hasMore={hasMore}
+                    loader={<h4>Loading...</h4>}
 
                     />
                     <tbody>
@@ -38,7 +37,7 @@ export const TableSection = () => {
                                     #{item.id}
                                 </td>
                                 <td>
-                                    {item.featured === true ? <div className="featured">featured</div> : null}
+                                {item.featured===true?<div className="featured">featured</div>:null}
                                     <div style={{ display: "flex", alignItems: "center" }}>
                                         <Image src={item.logo} width={70} roundedCircle />
                                         <div className="college-details">
@@ -60,17 +59,26 @@ export const TableSection = () => {
                                         &#8377; {item.courseFees}</a>
                                 </td>
                                 <td>
-                                    <div className="package">
-                                        <a href="https://collegedunia.com/university/25703-iit-bombay-indian-institute-of-technology-iitb-mumbai" class="package-number">&#8377; {item.palcement.averagePkg}</a>
-                                        <br />
-                                        <a href="https://collegedunia.com/university/25703-iit-bombay-indian-institute-of-technology-iitb-mumbai" class="package-text">Average Package</a>
-                                    </div>
+                                    <a
+                                        href="https://collegedunia.com/university/25703-iit-bombay-indian-institute-of-technology-iitb-mumbai"
+                                        className="package-number"
+                                    >&#8377; {item.palcement.averagePkg}</a>
                                     <br />
-                                    <div className="package">
-                                        <a href="https://collegedunia.com/university/25703-iit-bombay-indian-institute-of-technology-iitb-mumbai" class="package-number">&#8377; {item.palcement.heighestPkg}</a>
-                                        <br />
-                                        <a href="https://collegedunia.com/university/25703-iit-bombay-indian-institute-of-technology-iitb-mumbai" class="package-text">Heighest Package</a>
-                                    </div>
+                                    <a
+                                        href="https://collegedunia.com/university/25703-iit-bombay-indian-institute-of-technology-iitb-mumbai"
+                                        className="package-text"
+                                    >Average Package</a>
+                                    <br />
+                                    <a
+                                        href="https://collegedunia.com/university/25703-iit-bombay-indian-institute-of-technology-iitb-mumbai"
+                                        className="package-number"
+
+                                    >&#8377; {item.palcement.heighestPkg}</a>
+                                    <br />
+                                    <a
+                                        href="https://collegedunia.com/university/25703-iit-bombay-indian-institute-of-technology-iitb-mumbai"
+                                        className="package-text"
+                                    >Heighest Package</a>
                                 </td>
                                 <td>
                                     <div className="review-container">
